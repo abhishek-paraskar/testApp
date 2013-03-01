@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <meta name="viewport" content="width=320; user-scalable=yes" />
+	    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	    <title>PhoneGap</title>
+      	<script type="text/javascript" charset="utf-8" src="cordova-2.4.0.js"></script>
+      	<script type="text/javascript" charset="utf-8" src="video.js"></script>
+		<script type="text/javascript">
+			function init(){
+			    window.plugins.videoPlayer.play('file:///storage/sdcard0/Download/Wildlife.wmv');
+			}
+		</script>  
+	</head>
+  	<body onload="init();">   
+ 		<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup='{"controls":true}'>
+	        <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />	       
+      </video>
+    </body>
+</html>
